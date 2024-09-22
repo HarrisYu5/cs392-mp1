@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Function</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="employment.html">Employment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="calculator">
+        <label for="">Base number:</label>
+        <input type="text" id = "a" placeholder="Input your base number">
+        <br>
+        <label for="">Target number:</label>
+        <input type="text" id = "b" placeholder="Input your target number">
+        <br>
+        <div id="buttons">
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="times()">*</button>
+        <button onclick="divide()">/</button>
+        <button onclick="power()">**</button>
+        </div>
+        <p id = "display"></p>
+        </div>
+
+    </main>
+    
+
+    <script src="script.js"></script> 
+</body>
+</html>

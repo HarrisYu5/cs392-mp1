@@ -1,0 +1,159 @@
+* {/* Global failsafe */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #180a0a; /* Dark mode color */
+    color: #ffffff; /* Dark mode font color */
+    margin: 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    text-align: center;
+    margin-bottom: 20px; 
+    box-shadow: #696363 0 0 10px;
+}
+header p{
+    text-align: center;
+    font-size: calc(10px + 1vw);
+    box-shadow: #696363 0 0 10px;
+}
+
+header h1{
+    font-size: calc(20px + 2vw);
+    margin-bottom: 10px;
+}
+img{
+    max-width: 400px;
+    align-content: center;
+    max-width: 100%; /* Fill the entire body with the image */
+}
+nav{
+    width: 30%;
+    background-color: rgb(150, 125, 93);
+    box-shadow: #696363 0 0 10px;
+}
+
+#jobs{
+    align-content: center;
+}
+#calculator{
+    align-content: center;
+    width: 100%;
+    padding: 2vw;
+    font-size: calc(10px + 1vw);
+
+
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#buttons button{
+    margin: 5px;
+    padding: 10px;
+    font-size: calc(10px + 1vw);
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This prevent the text from poking out of the nav menu */
+}
+nav li{
+    margin: 5px;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    font-size: calc(10px + 1vw);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    padding: 2vw; 
+    box-shadow: #696363 0 0 10px;
+}
+
+main p{
+    font-size: calc(10px + 1vw);
+    margin-bottom: 20px;
+}
+
+
+
+footer{
+    text-align: center;
+    font-size: calc(10x + 1vw);
+    padding: 20px;
+    background-color: burlywood;
+    color: #ffffff;
+    width: 100%;
+}
+
+footer a{
+    color: #ffffff;
+    box-shadow: #696363 0 0 10px;
+}
+
+
+
+@media (min-width: 750px) {
+    nav {
+        position: fixed; 
+        top: 0; /* To fill the missing part at top of the nav menu */
+        left: 0;
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main, footer {
+        margin-left: 30%;
+        max-width: 70%;
+    }
+}
+@media (max-width: 750px){
+    nav {
+        position: static;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    main {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
